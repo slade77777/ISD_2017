@@ -136,7 +136,11 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        Collective\Html\HtmlServiceProvider::class,
+        Creativeorange\Gravatar\GravatarServiceProvider::class,
+        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
+        Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -144,6 +148,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
 
     ],
 
@@ -193,7 +198,13 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-
+        'Form'      => Collective\Html\FormFacade::class,
+        'Active'      => HieuLe\Active\Facades\Active::class,
+        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
+        'Captcha'     => Arcanedev\NoCaptcha\Facades\NoCaptcha::class,
+        'Gravatar'    => Creativeorange\Gravatar\Facades\Gravatar::class,
+        'Html'        => Collective\Html\HtmlFacade::class,
+        'Socialite'   => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];
